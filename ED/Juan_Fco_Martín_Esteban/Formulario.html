@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Formulario</h2>
+    <form action="">
+    <label for="nombre">Nombre completo:</label>
+    <input type="text" name="nombre" id="nombre" placeholder="Ej: Juan Francisco Martín Esteban" required>
+    <br>
+    <label for="correo">Correo electrónico:</label>
+    <input type="email" name="correo" id="correo" placeholder="ejemplo@correo.com" required>
+    <br>
+    <label for="pais">País:</label>
+    <input type="text" name="pais" id="pais" required>
+    <br>
+    <label for="fecha">Fecha de nacimiento:</label>
+    <input type="date" name="fecha" id="fecha" required>
+    <br>
+    <fieldset>
+   <legend>¿Habías escuchado antes a Sepultura?</legend>
+   <input type="radio" id="si" name="escuchado" value="si">
+   <label for="si">Si</label>
+
+   <input type="radio" id="no" name="escuchado" value="no">
+   <label for="no">No</label>
+   </fieldset>
+   <br>
+   <label for="disco_favorito">En caso de que la hayas escuchado ¿Cuál es tu disco favorito?</label>
+   <select name="disco_favorito" id="disco_favorito">
+        <option value="morbid visions">Morbid Visions</option>
+        <option value="schizophrenia">Schizophrenia</option>
+        <option value="beneath the remains">Beneath the Remains</option>
+        <option value="arise">Arise</option>
+        <option value="chaos a.d.">Chaos A.D.</option>
+        <option value="roots">Roots</option>
+        <option value="otro">Otro (Seguramente sea muy malo)</option>
+    </select>    
+    <br>
+    <label for="cancion_favorita">¿Y tu canción favorita?</label>
+    <input type="text" name="cancion_favorita" id="cancion_favorita">
+    <br>
+    <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
